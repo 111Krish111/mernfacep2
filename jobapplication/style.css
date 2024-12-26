@@ -1,0 +1,304 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #c498f4, #6191e4);
+    
+    margin: 0;
+    padding: 0;
+    color: #090808;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Navbar Customizations */
+.navbar {
+
+    background-color: #007bff;
+    border-bottom: 2px solid #0056b3;
+    transition: background-color 0.3s ease;
+    
+}
+
+.navbar:hover {
+    background-color: #0056b3;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #080808;
+    font-size: 1.8em;
+}
+
+.navbar-nav .nav-link {
+    color: #080808;
+    font-size: 1.1em;
+    
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007cf8;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #007bff;
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-section .btn {
+    margin: 10px;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.hero-section .btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-primary {
+    background-color: #3588e7;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #1d8bea;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary:hover {
+    background-color: #495057;
+}
+
+/* Card Styles for Job Listings */
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1em;
+    color: #151414;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #e9edf0;
+}
+
+.card a:hover {
+    color: #fef7f7;
+}
+
+/* Form Customizations */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Employer Dashboard */
+.dashboard-card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.dashboard-card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+.dashboard-card-body {
+    padding: 20px;
+}
+
+/* Tab Styles */
+.nav-tabs .nav-link {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+.tab-content .form-control {
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-section p {
+        font-size: 1.1em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .card-title {
+        font-size: 1.3em;
+    }
+
+    .card-text {
+        font-size: 1em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1.2em;
+    }
+
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .card-title {
+        font-size: 1.2em;
+    }
+
+    .card-text {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .form-control {
+        font-size: 1em;
+    }
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
